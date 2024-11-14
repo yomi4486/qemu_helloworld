@@ -6,7 +6,7 @@ mov al, 0x3       ; 0x3 -> al
 int 0x10          ; 映像の出力を管理するBIOS(0x10)にint命令で割り込み 
  
 mov si, msg       ; msg を si へ動かす。ソースインデックスに msg を格納
-mov ah, 0x0E      ; 0x0E を ah へ動かす。画面の文字列を 0x10 へ割り込み可能に
+mov ah, 0x0E      ; 0x0E を ah へ動かす。画面の文字列を 0x10 へ割り込み可能に@
 
 ; ループ開始
 print_character_loop:    
